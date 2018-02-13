@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+table, td {
+    border: 1px solid black;
+}
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+
+<p>Click the button to add a new row at the first position of the table and then add cells and content.</p>
+<p>Reference the Rotten Tomatoes website to access the Actual RT Score: 
+<a href="https://www.rottentomatoes.com/">Rotten Tomatoes</a></p>
+<br>
+<p></p>
+<table id="myTable">
+  <tr>
+    <td><input type="text"></td>
+    <td>Movie #1</td>
+    <td></td>
+    <td>Movie #2</td>
+    <td></td>
+    <td>Movie #3</td>
+    <td></td>
+    <td>Movie #4</td>
+    <td></td>
+    <td>Movie #5</td>
+    <td></td>
+    <td>RunningTotal</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td><input type="text" value="" placeholder="Enter Movie #1"></td>
+    <td></td>
+    <td><input type="text" value="" placeholder="Enter Movie #2"></td>
+    <td></td>
+    <td><input type="text" value="" placeholder="Enter Movie #3"></td>
+    <td></td>
+    <td><input type="text" value="" placeholder="Enter Movie #4"></td>
+    <td></td>
+    <td><input type="text" value="" placeholder="Enter Movie #5"></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td><input type="text" value="" id="movie1" placeholder="Enter Actual RT Score"></td>
+    <td></td>
+    <td><input type="text" value="" id="movie2" placeholder="Enter Actual RT Score"></td>
+    <td></td>
+    <td><input type="text" value="" id="movie3" placeholder="Enter Actual RT Score"></td>
+    <td></td>
+    <td><input type="text" value="" id="movie4" placeholder="Enter Actual RT Score"></td>
+    <td></td>
+    <td><input type="text" value="" id="movie5"
+    placeholder="Enter Actual RT Score"></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>Guess</td>
+    <td>Range</td>
+    <td>Guess</td>
+    <td>Range</td>
+    <td>Guess</td>
+    <td>Range</td>
+    <td>Guess</td>
+    <td>Range</td>
+    <td>Guess</td>
+    <td>Range</td>
+    <td></td>
+  </tr>
+  <tr>
+  	<td><input type="text" placeholder="Enter Participant"></td>
+    <td><input type="text" value="" id="partic1movie1" placeholder="Enter Guess"></td>
+    <td id="partic1range1" value=""></td>
+    <td><input type="text" value="" id="partic1movie2" placeholder="Enter Guess"></td>
+    <td><input type="text" value=$(></td>
+    <td><input type="text" value="" id="partic1movie3" placeholder="Enter Guess"></td>
+    <td></td>
+    <td><input type="text" value="" id="partic1movie4" placeholder="Enter Guess"></td>
+    <td></td>
+    <td><input type="text" value="" id="partic1movie5" placeholder="Enter Guess"></td>
+    <td></td>
+    <td></td>
+  </tr>
+
+  <input type="submit" value="Submit">
+  
+
+</table>
+<br>
+
+<button onclick="myFunction()">Try it</button>
+
+<script>
+
+
+$(document).ready(function(){
+    var movieONE = $("#movie1").val();
+    var range1partic1 = $("#partic1movie1").val();
+    var partic1movie1Range = parseInt(movieONE) + parseInt(range1partic1);
+    $("#partic1range1").val(partic1movieRange);
+    
+
+});
+</script>
+
+</body>
+</html>
