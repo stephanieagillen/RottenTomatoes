@@ -1,0 +1,62 @@
+
+body, html {
+    height: 100%;
+    font-family: "Optima", sans-serif;
+}
+.curtain-background 
+{ 
+    background: url(film-background.png) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100%
+}
+
+
+.home .heading h1 {
+    color: #ffffff;
+    padding: 80px;
+    background-color: rgba(0, 0, 0, 0.6); 
+    font-size: 4em;
+    margin-bottom: 1.5em;
+}
+
+.home .heading p {
+    color: #ffffff;
+    padding: 80px;
+    background-color: rgba(0, 0, 0, 0.6); 
+    font-size: 1.5em;
+    margin-bottom: 1.5em;
+}
+
+.home .content {
+    color: #ffffff;
+    padding: 50px;
+    background-color: rgba(0, 0, 0, 0.6); 
+    
+}
+
+.home .content form input {
+    color: #000000;
+}
+
+
+ .home .content form input.scoreNumber {
+    background:none;
+    border:none;
+    color: #fff;
+}
+
+label {
+    min-width: 150px;
+    text-align: left;
+  
+}
+
+@media (min-width: 576px) {
+    label {
+        text-align: right;
+        padding-right: 1em;
+    }
+}
